@@ -1,0 +1,83 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+<ui:composition>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <h:form>
+                    <div class="navbar-header navbar-left">
+                        <h:link outcome="index">
+                            <img alt="Brand" class="navbar-brand"  src="resources/images/logo.png"/>
+                        </h:link>
+                        <p class="navbar-text">Hi~ <h:outputText value="#{userManager.loginUser.username}"/></p>
+                        <h:commandLink value="Quit" styleClass="btn btn-default navbar-btn navbar-left" action="#{pageBean.quit}"/>
+                    </div>
+                </h:form>
+
+                <h:form>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"/></a>
+                            <ul class="dropdown-menu" id="project_nav">
+                                <!--Use JSTL to display projects' name-->
+                                <c:forEach items="#{projectManager.projects}" var="pro">
+                                    <li class="text-center">
+                                        <h:commandLink styleClass="navbar-link" value="#{pro.name}" action="project"
+                                                       actionListener="#{projectManager.findPageProject(pro.pid)}"/>
+                                    </li>
+                                </c:forEach>
+                            </ul>
+                        </li>
+                        <li><h:link value="Home Page" styleClass="navbar-brand" outcome="home"/></li>
+                    </ul>
+                </h:form>
+
+                <div class="nav navbar-nav navbar-right" style="margin-right: 10px">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#styleModal">
+                        Customize style
+                    </button>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="styleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <h:form id="style">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Customize your style</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="style:bgColor">Background color</label>
+                                <h:selectOneListbox id="bgColor" styleClass="form-control"
+                                                    value="#{styleManager.userStyle.bgColor}">
+                                    <f:selectItems value="#{pageBean.colorMap}"/>
+                                </h:selectOneListbox>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <h:commandButton value="Save changes" styleClass="btn btn-primary"
+                                             action="#{styleManager.updateStyle}"/>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </header>
+</ui:composition>
+</html>

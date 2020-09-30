@@ -1,0 +1,45 @@
+.myLogin{
+    background-color: #5BC0DE;
+    text-align: center;
+}
+
+.loginForm{
+    background-color: #f8f8f8;
+    height: 500px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow:2px 2px 20px 2px rgba(0,0,0,0.3);
+}
+
+.innerForm{
+    width: 350px;
+    height: 220px;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: white;
+    box-shadow:2px 2px 20px 2px rgba(0,0,0,0.3);
+}
+.login{
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 320px;
+    text-align: left;
+}
+
+.registerDiv{
+    margin-left: 40px;
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}

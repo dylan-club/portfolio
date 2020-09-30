@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Project</title>
+    <meta  name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+    <!--user custom style sheets-->
+    <h:outputStylesheet name="css/page.css"/>
+
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $("#style\\:bgColor").attr("size","1");
+        }
+    </script>
+
+</h:head>
+
+<h:body style="background-color: #{(styleManager.userStyle.bgColor == null) ? 'white' : styleManager.userStyle.bgColor}">
+    <!--header-->
+    <ui:insert>
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+
+    <!--project content-->
+    <div class="container">
+        <div class="well well-lg">
+
+            <!-- Button trigger modal -->
+            <div class="row" id="editProject">
+                <h:link styleClass="btn btn-default edit" value="+ Edit Project" outcome="edit"/>
+            </div>
+
+            <!--Project Details-->
+            <div class="row" id="myContent">
+                <h1 id="pName" class="text-center">#{projectManager.pageProject.name}</h1>
+                <div id="page-content">
+                    <p id="pKey" class="text-info text-content" >
+                        <span class="pKey">Keywords:</span> #{projectManager.pageProject.key}
+                    </p>
+                    <img src="#{pageBean.imgURI}" alt="project description" class="img-thumbnail"/>
+                    <h2>Project Description</h2>
+                    <p id="pDescription" class="text-info text-content" >#{projectManager.pageProject.description}</p>
+                    <h2>Project Summary</h2>
+                    <p id="pSummary" class="text-info text-content" >#{projectManager.pageProject.summary}</p>
+                    <h2>Project Link</h2>
+                    <a id="pLink" class="btn btn-default" href="#{projectManager.pageProject.linkDetail}" role="button" target="_blank">#{projectManager.pageProject.linkInfo}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <ui:insert>
+        <ui:include src="footer.xhtml"/>
+    </ui:insert>
+
+</h:body>
+
+</html>

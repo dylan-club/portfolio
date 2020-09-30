@@ -1,0 +1,1110 @@
+2020-07-11 09:47:02,372-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl - Incoming config yielded no classloaders; adding standard SE ones
+2020-07-11 09:47:02,493-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.HibernatePersistenceProvider - Located and parsed 1 persistence units; checking each
+2020-07-11 09:47:02,493-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.HibernatePersistenceProvider - Checking persistence-unit [name=project, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [project]
+2020-07-11 09:47:02,494-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.boot.spi.ProviderChecker - Persistence-unit [project] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2020-07-11 09:47:02,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: project
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/E:/IdeaProject/portfolio/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: org.apache.derby.jdbc.EmbeddedDriver
+		javax.persistence.jdbc.url: jdbc:derby:project;create=true
+		hibernate.dialect: org.hibernate.dialect.DerbyTenFiveDialect
+		hibernate.show_sql: true
+		hibernate.hb2ddl.auto: update]
+2020-07-11 09:47:02,535-[TS] DEBUG http-bio-80-exec-1 org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-07-11 09:47:02,536-[TS] DEBUG http-bio-80-exec-1 org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-07-11 09:47:02,546-[TS] DEBUG http-bio-80-exec-1 org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-07-11 09:47:02,546-[TS] DEBUG http-bio-80-exec-1 org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2020-07-11 09:47:02,647-[TS] INFO http-bio-80-exec-1 org.hibernate.Version - HHH000412: Hibernate Core {5.0.7.Final}
+2020-07-11 09:47:02,648-[TS] INFO http-bio-80-exec-1 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-07-11 09:47:02,649-[TS] INFO http-bio-80-exec-1 org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-07-11 09:47:02,663-[TS] DEBUG http-bio-80-exec-1 org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-07-11 09:47:02,711-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-07-11 09:47:02,717-[TS] INFO http-bio-80-exec-1 org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-07-11 09:47:02,789-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3f35dbd3
+2020-07-11 09:47:02,789-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3f35dbd3
+2020-07-11 09:47:02,789-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3f35dbd3
+2020-07-11 09:47:02,790-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2507ffe6
+2020-07-11 09:47:02,792-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@e6514de
+2020-07-11 09:47:02,792-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@32ac5c32
+2020-07-11 09:47:02,794-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@21a3911a
+2020-07-11 09:47:02,794-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@21a3911a
+2020-07-11 09:47:02,794-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@21a3911a
+2020-07-11 09:47:02,795-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@65dff5aa
+2020-07-11 09:47:02,795-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@65dff5aa
+2020-07-11 09:47:02,795-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@65dff5aa
+2020-07-11 09:47:02,797-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@25ebbf46
+2020-07-11 09:47:02,797-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@25ebbf46
+2020-07-11 09:47:02,797-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@25ebbf46
+2020-07-11 09:47:02,798-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@162885cf
+2020-07-11 09:47:02,798-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@162885cf
+2020-07-11 09:47:02,798-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@162885cf
+2020-07-11 09:47:02,800-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6cc91a60
+2020-07-11 09:47:02,800-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6cc91a60
+2020-07-11 09:47:02,800-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6cc91a60
+2020-07-11 09:47:02,802-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@503fd794
+2020-07-11 09:47:02,802-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@503fd794
+2020-07-11 09:47:02,802-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@503fd794
+2020-07-11 09:47:02,803-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@209cd084
+2020-07-11 09:47:02,803-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@209cd084
+2020-07-11 09:47:02,803-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@209cd084
+2020-07-11 09:47:02,805-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@27640c0b
+2020-07-11 09:47:02,805-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@27640c0b
+2020-07-11 09:47:02,806-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4acefe21
+2020-07-11 09:47:02,806-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4acefe21
+2020-07-11 09:47:02,807-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@23171fe7
+2020-07-11 09:47:02,807-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@23171fe7
+2020-07-11 09:47:02,807-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@79db43df
+2020-07-11 09:47:02,808-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@fc2b2e5
+2020-07-11 09:47:02,809-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@dbd023e
+2020-07-11 09:47:02,809-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@dbd023e
+2020-07-11 09:47:02,811-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@1b81841d
+2020-07-11 09:47:02,811-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1b81841d
+2020-07-11 09:47:02,812-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@4829a09
+2020-07-11 09:47:02,812-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4829a09
+2020-07-11 09:47:02,814-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4ea8f008
+2020-07-11 09:47:02,814-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4ea8f008
+2020-07-11 09:47:02,814-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4ea8f008
+2020-07-11 09:47:02,815-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1a96d86c
+2020-07-11 09:47:02,816-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@a8cf4e8
+2020-07-11 09:47:02,816-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@a8cf4e8
+2020-07-11 09:47:02,816-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@a8cf4e8
+2020-07-11 09:47:02,816-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@188a6988
+2020-07-11 09:47:02,817-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@3c37fa24
+2020-07-11 09:47:02,817-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3c37fa24
+2020-07-11 09:47:02,817-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@73d0aa15
+2020-07-11 09:47:02,817-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@73d0aa15
+2020-07-11 09:47:02,818-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6f04f58e
+2020-07-11 09:47:02,818-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6f04f58e
+2020-07-11 09:47:02,819-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3a19d6e
+2020-07-11 09:47:02,819-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3a19d6e
+2020-07-11 09:47:02,821-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@11e36743
+2020-07-11 09:47:02,821-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@11e36743
+2020-07-11 09:47:02,821-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@56dc5408
+2020-07-11 09:47:02,822-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@71c15dee
+2020-07-11 09:47:02,822-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@71c15dee
+2020-07-11 09:47:02,822-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@71c15dee
+2020-07-11 09:47:02,823-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@689009e3
+2020-07-11 09:47:02,823-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@689009e3
+2020-07-11 09:47:02,823-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@689009e3
+2020-07-11 09:47:02,824-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@6e930e81
+2020-07-11 09:47:02,824-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@32f4daa9
+2020-07-11 09:47:02,824-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@32f4daa9
+2020-07-11 09:47:02,824-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@32f4daa9
+2020-07-11 09:47:02,825-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2be73c2d
+2020-07-11 09:47:02,825-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2be73c2d
+2020-07-11 09:47:02,825-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2be73c2d
+2020-07-11 09:47:02,826-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7399bc4c
+2020-07-11 09:47:02,826-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@1bbdb5de
+2020-07-11 09:47:02,830-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@49b32c05
+2020-07-11 09:47:02,830-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@49b32c05
+2020-07-11 09:47:02,830-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a3ca662
+2020-07-11 09:47:02,833-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1551acd3
+2020-07-11 09:47:02,833-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1551acd3
+2020-07-11 09:47:02,835-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1838405c
+2020-07-11 09:47:02,835-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1838405c
+2020-07-11 09:47:02,835-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@13c06c6b
+2020-07-11 09:47:02,836-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@c22131f
+2020-07-11 09:47:02,836-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@660e6bd5
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@3f28a40e
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3f28a40e
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1a3627f
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7b51ae91
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@c8b8170
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@22f48277
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@38deaccc
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4e0db860
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1edd30d0
+2020-07-11 09:47:02,839-[TS] DEBUG http-bio-80-exec-1 org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@18bcee46
+2020-07-11 09:47:02,850-[TS] WARN http-bio-80-exec-1 org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-07-11 09:47:02,961-[TS] INFO http-bio-80-exec-1 org.hibernate.orm.connections - HHH10001005: using driver [org.apache.derby.jdbc.EmbeddedDriver] at URL [jdbc:derby:project;create=true]
+2020-07-11 09:47:02,961-[TS] INFO http-bio-80-exec-1 org.hibernate.orm.connections - HHH10001001: Connection properties: {}
+2020-07-11 09:47:02,961-[TS] INFO http-bio-80-exec-1 org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+2020-07-11 09:47:02,962-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+2020-07-11 09:47:02,963-[TS] INFO http-bio-80-exec-1 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-07-11 09:47:04,688-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : Apache Derby
+    version : 10.14.2.0 - (1828579)
+      major : 10
+      minor : 14
+2020-07-11 09:47:04,689-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.14.2.0 - (1828579)
+      major : 10
+      minor : 14
+2020-07-11 09:47:04,689-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.2
+2020-07-11 09:47:04,744-[TS] INFO http-bio-80-exec-1 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyTenFiveDialect
+2020-07-11 09:47:04,766-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.jdbc.cursor.internal.StandardRefCursorSupport - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+2020-07-11 09:47:05,079-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-07-11 09:47:05,079-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-07-11 09:47:05,081-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-07-11 09:47:05,081-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-07-11 09:47:05,086-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-07-11 09:47:05,089-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-07-11 09:47:05,089-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-07-11 09:47:05,095-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-07-11 09:47:05,096-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-07-11 09:47:05,097-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-07-11 09:47:05,099-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-07-11 09:47:05,099-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-07-11 09:47:05,099-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-07-11 09:47:05,099-[TS] DEBUG http-bio-80-exec-1 org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-07-11 09:47:05,160-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-07-11 09:47:05,187-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.nicklaus.bean.UserBean
+2020-07-11 09:47:05,226-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-07-11 09:47:05,233-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Import with entity name UserBean
+2020-07-11 09:47:05,236-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Bind entity com.nicklaus.bean.UserBean on table user_table
+2020-07-11 09:47:05,256-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_id, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,259-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property uid with lazy=false
+2020-07-11 09:47:05,260-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:uid]
+2020-07-11 09:47:05,261-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for uid
+2020-07-11 09:47:05,262-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property uid
+2020-07-11 09:47:05,264-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_address, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,264-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property address with lazy=false
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:address]
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for address
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property address
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_email, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:email]
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for email
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property email
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_experience, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property experience with lazy=false
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:experience]
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for experience
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property experience
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_goal, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property goal with lazy=false
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:goal]
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for goal
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property goal
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_interest, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,265-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property interest with lazy=false
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:interest]
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for interest
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property interest
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_introduction, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property introduction with lazy=false
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:introduction]
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for introduction
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property introduction
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_name, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:name]
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for name
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property name
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_password, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property password with lazy=false
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:password]
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for password
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property password
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_skill, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property skill with lazy=false
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:skill]
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for skill
+2020-07-11 09:47:05,266-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property skill
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_table), mappingColumn=u_username, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property username with lazy=false
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.UserBean:username]
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for username
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property username
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.nicklaus.bean.Project
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Import with entity name Project
+2020-07-11 09:47:05,267-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Bind entity com.nicklaus.bean.Project on table project_table
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_id, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property pid with lazy=false
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:pid]
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for pid
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property pid
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_description, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property description with lazy=false
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:description]
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for description
+2020-07-11 09:47:05,268-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property description
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_key, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property key with lazy=false
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:key]
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for key
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property key
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_linkdetail, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property linkDetail with lazy=false
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:linkDetail]
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for linkDetail
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property linkDetail
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_linkinfo, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property linkInfo with lazy=false
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:linkInfo]
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for linkInfo
+2020-07-11 09:47:05,269-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property linkInfo
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_name, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:name]
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for name
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property name
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=p_summary, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property summary with lazy=false
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:summary]
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for summary
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property summary
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(project_table), mappingColumn=u_id, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property uid with lazy=false
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.Project:uid]
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for uid
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property uid
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.nicklaus.bean.StyleBean
+2020-07-11 09:47:05,270-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Import with entity name StyleBean
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.EntityBinder - Bind entity com.nicklaus.bean.StyleBean on table style_table
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(style_table), mappingColumn=s_id, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property sid with lazy=false
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.StyleBean:sid]
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for sid
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property sid
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(style_table), mappingColumn=s_bgColorRGB, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property bgColor with lazy=false
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.StyleBean:bgColor]
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for bgColor
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property bgColor
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(style_table), mappingColumn=u_id, insertable=true, updatable=true, unique=false}
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property uid with lazy=false
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.nicklaus.bean.StyleBean:uid]
+2020-07-11 09:47:05,271-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for uid
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.PropertyBinder - Building property uid
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for uid
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for address
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for experience
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for goal
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for interest
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for introduction
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for password
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for skill
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for username
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for pid
+2020-07-11 09:47:05,272-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for description
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for key
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for linkDetail
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for linkInfo
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for summary
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for uid
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for sid
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for bgColor
+2020-07-11 09:47:05,273-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for uid
+2020-07-11 09:47:05,274-[TS] DEBUG http-bio-80-exec-1 org.hibernate.mapping.PrimaryKey - Forcing column [u_id] to be non-null as it is part of the primary key for table [user_table]
+2020-07-11 09:47:05,274-[TS] DEBUG http-bio-80-exec-1 org.hibernate.mapping.PrimaryKey - Forcing column [p_id] to be non-null as it is part of the primary key for table [project_table]
+2020-07-11 09:47:05,274-[TS] DEBUG http-bio-80-exec-1 org.hibernate.mapping.PrimaryKey - Forcing column [s_id] to be non-null as it is part of the primary key for table [style_table]
+2020-07-11 09:47:05,306-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryImpl - Building session factory
+2020-07-11 09:47:05,306-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - SessionFactory name : null
+2020-07-11 09:47:05,306-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): disabled
+2020-07-11 09:47:05,306-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Statistics: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Default entity-mode: pojo
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Default batch fetch size: -1
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Default null ordering: NONE
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Query language substitutions: {}
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JPA query language strict compliance: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Named query checking : enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Second-level cache: enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Second-level query cache: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@3b2f5ed0
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Second-level cache region prefix: null
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JDBC batch size: 0
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Scrollable result sets: enabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Wrap result sets: disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): disabled
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - JDBC result set fetch size: null
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+2020-07-11 09:47:05,307-[TS] DEBUG http-bio-80-exec-1 org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+2020-07-11 09:47:05,353-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryImpl - Returning a Reference to the SessionFactory
+2020-07-11 09:47:05,354-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2020-07-11 09:47:05,354-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.vendor=Oracle Corporation, archetypeCatalog=internal, sun.java.launcher=SUN_STANDARD, catalina.base=E:\IdeaProject\portfolio\target\tomcat, hibernate.connection.url=jdbc:derby:project;create=true, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, catalina.useNaming=true, os.name=Windows 10, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes, java.util.logging.config.file=E:\IdeaProject\portfolio\target\tomcat\conf\logging.properties, idea.version2020.1.2=true, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_251-b08, user.name=Retrospect, shared.loader=, guice.disable.misplaced.annotation.check=true, tomcat.util.buf.StringCache.byte.enabled=true, maven.repo.local=D:\depository\maven_repository, user.language=zh, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_251\jre\bin, classworlds.conf=D:\depository\apache-maven-3.6.3\bin\m2.conf, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, java.version=1.8.0_251, user.timezone=Asia/Shanghai, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper., file.separator=\, java.specification.name=Java Platform API Specification, maven.conf=D:\depository\apache-maven-3.6.3/conf, java.class.version=52.0, user.country=CN, java.home=C:\Program Files\Java\jdk1.8.0_251\jre, java.vm.info=mixed mode, os.version=10.0, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@6f766fc0, path.separator=;, java.vm.version=25.251-b08, javax.persistence.jdbc.url=jdbc:derby:project;create=true, user.variant=, maven.ext.class.path=D:\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven-event-listener.jar, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.scan.DefaultJarScanner.jarsToSkip=bootstrap.jar,commons-daemon.jar,tomcat-juli.jar,annotations-api.jar,el-api.jar,jsp-api.jar,servlet-api.jar,websocket-api.jar,catalina.jar,catalina-ant.jar,catalina-ha.jar,catalina-tribes.jar,jasper.jar,jasper-el.jar,ecj-*.jar,tomcat-api.jar,tomcat-util.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-jni.jar,tomcat-spdy.jar,tomcat-i18n-en.jar,tomcat-i18n-es.jar,tomcat-i18n-fr.jar,tomcat-i18n-ja.jar,tomcat-juli-adapters.jar,catalina-jmx-remote.jar,catalina-ws.jar,tomcat-jdbc.jar,tools.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,jstl.jar,geronimo-spec-jaxrpc*.jar,wsdl4j*.jar,ant.jar,ant-junit*.jar,aspectj*.jar,jmx.jar,h2*.jar,hibernate*.jar,httpclient*.jar,jmx-tools.jar,jta*.jar,log4j.jar,log4j-1*.jar,mail*.jar,slf4j*.jar,xercesImpl.jar,xmlParserAPIs.jar,xml-apis.jar,junit.jar,junit-*.jar,hamcrest*.jar,org.hamcrest*.jar,ant-launcher.jar, awt.toolkit=sun.awt.windows.WToolkit, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper., user.script=, java.naming.factory.url.pkgs=org.apache.naming, user.home=C:\Users\Retrospect, org.apache.catalina.startup.ContextConfig.jarsToSkip=, java.specification.vendor=Oracle Corporation, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.library.path=C:\Program Files\Java\jdk1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\SumatraPDF;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;E:\Git\cmd;D:\Rational Rose\common;D:\depository\apache-maven-3.6.3\bin;D:\MySQL 5.5\bin;D:\Derby\db-derby-10.14.2.0-bin\bin;E:\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Retrospect\AppData\Local\Microsoft\WindowsApps;D:\IntelliJ IDEA 2019.2.4\bin;;D:\MiKTex\miktex\bin\x64\;C:\Users\Retrospect\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.apache.derby.jdbc.EmbeddedDriver, org.apache.catalina.startup.TldConfig.jarsToSkip=tomcat7-websocket.jar, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.DerbyTenFiveDialect, hibernate.ejb.persistenceUnitName=project, common.loader=E:\IdeaProject\portfolio\target\tomcat/lib,E:\IdeaProject\portfolio\target\tomcat/lib/*.jar,E:\IdeaProject\portfolio\target\tomcat/lib,E:\IdeaProject\portfolio\target\tomcat/lib/*.jar, maven.home=D:\depository\apache-maven-3.6.3, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.classworlds.Launcher -Didea.version2020.1.2 -s D:\depository\apache-maven-3.6.3\conf\settings.xml -Dmaven.repo.local=D:\depository\maven_repository tomcat7:run, java.class.path=D:\depository\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;D:\depository\apache-maven-3.6.3\boot\plexus-classworlds.license;D:\IntelliJ IDEA 2019.2.4\lib\idea_rt.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, catalina.home=E:\IdeaProject\portfolio\target\tomcat, sun.os.patch.level=, sun.cpu.endian=little, javax.persistence.jdbc.driver=org.apache.derby.jdbc.EmbeddedDriver, java.io.tmpdir=C:\Users\RETROS~1\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=E:\IdeaProject\portfolio, server.loader=, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_251\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, user.dir=E:\IdeaProject\portfolio, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, tomcat.maven.http.port=80, hibernate.hb2ddl.auto=update, java.specification.version=1.8, hibernate.show_sql=true}
+2020-07-11 09:47:05,363-[TS] DEBUG http-bio-80-exec-1 org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2020-07-11 09:47:05,369-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.spi.CascadeStyles - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2020-07-11 09:47:05,404-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.UserBean] is safe
+2020-07-11 09:47:05,404-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.UserBean
+2020-07-11 09:47:05,424-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.UserBean] is safe
+2020-07-11 09:47:05,424-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.UserBean
+2020-07-11 09:47:05,456-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.Project] is safe
+2020-07-11 09:47:05,457-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.Project
+2020-07-11 09:47:05,458-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.Project] is safe
+2020-07-11 09:47:05,458-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.Project
+2020-07-11 09:47:05,460-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.StyleBean] is safe
+2020-07-11 09:47:05,460-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.StyleBean
+2020-07-11 09:47:05,460-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [com.nicklaus.bean.StyleBean] is safe
+2020-07-11 09:47:05,460-[TS] DEBUG http-bio-80-exec-1 org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.nicklaus.bean.StyleBean
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.nicklaus.bean.UserBean
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select u_id from user_table where u_id =?
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select userbean_.u_id, userbean_.u_address as u_addres2_2_, userbean_.u_email as u_email3_2_, userbean_.u_experience as u_experi4_2_, userbean_.u_goal as u_goal5_2_, userbean_.u_interest as u_intere6_2_, userbean_.u_introduction as u_introd7_2_, userbean_.u_name as u_name8_2_, userbean_.u_password as u_passwo9_2_, userbean_.u_skill as u_skill10_2_, userbean_.u_username as u_usern11_2_ from user_table userbean_ where userbean_.u_id=?
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into user_table (u_address, u_email, u_experience, u_goal, u_interest, u_introduction, u_name, u_password, u_skill, u_username, u_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update user_table set u_address=?, u_email=?, u_experience=?, u_goal=?, u_interest=?, u_introduction=?, u_name=?, u_password=?, u_skill=?, u_username=? where u_id=?
+2020-07-11 09:47:05,466-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from user_table where u_id=?
+2020-07-11 09:47:05,467-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into user_table (u_id, u_address, u_email, u_experience, u_goal, u_interest, u_introduction, u_name, u_password, u_skill, u_username) values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-07-11 09:47:05,490-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f8e32b6]
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,491-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,507-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,510-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [NONE]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c66187]
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,512-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [READ]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9c51866]
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [UPGRADE]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dc25da1]
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,513-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [UPGRADE_NOWAIT]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bc7ae95]
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [UPGRADE_SKIPLOCKED]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d73154]
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,514-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [FORCE]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a7030b9]
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,515-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [PESSIMISTIC_READ]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for read only with rs
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@616f738]
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [PESSIMISTIC_WRITE]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5dc8fabb]
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [PESSIMISTIC_FORCE_INCREMENT]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=? for update with rs
+2020-07-11 09:47:05,516-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5078c356]
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [OPTIMISTIC]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3bd122cb]
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : email
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : experience
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : goal
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : interest
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : introduction
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : password
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : skill
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : username
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.UserBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.UserBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.UserBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.UserBean)
+          - SQL table alias mapping - userbean0_
+          - alias suffix - 0_
+          - suffixed key columns - {u_id1_2_0_}
+
+2020-07-11 09:47:05,517-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.UserBean [OPTIMISTIC_FORCE_INCREMENT]: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,555-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.nicklaus.bean.UserBean: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,555-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.nicklaus.bean.UserBean: select userbean0_.u_id as u_id1_2_0_, userbean0_.u_address as u_addres2_2_0_, userbean0_.u_email as u_email3_2_0_, userbean0_.u_experience as u_experi4_2_0_, userbean0_.u_goal as u_goal5_2_0_, userbean0_.u_interest as u_intere6_2_0_, userbean0_.u_introduction as u_introd7_2_0_, userbean0_.u_name as u_name8_2_0_, userbean0_.u_password as u_passwo9_2_0_, userbean0_.u_skill as u_skill10_2_0_, userbean0_.u_username as u_usern11_2_0_ from user_table userbean0_ where userbean0_.u_id=?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.nicklaus.bean.Project
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select p_id from project_table where p_id =?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select project_.p_id, project_.p_description as p_descri2_0_, project_.p_key as p_key3_0_, project_.p_linkdetail as p_linkde4_0_, project_.p_linkinfo as p_linkin5_0_, project_.p_name as p_name6_0_, project_.p_summary as p_summar7_0_, project_.u_id as u_id8_0_ from project_table project_ where project_.p_id=?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into project_table (p_description, p_key, p_linkdetail, p_linkinfo, p_name, p_summary, u_id, p_id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update project_table set p_description=?, p_key=?, p_linkdetail=?, p_linkinfo=?, p_name=?, p_summary=?, u_id=? where p_id=?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from project_table where p_id=?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into project_table (p_id, p_description, p_key, p_linkdetail, p_linkinfo, p_name, p_summary, u_id) values (default, ?, ?, ?, ?, ?, ?, ?)
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5855d9be]
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [NONE]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26be5da9]
+2020-07-11 09:47:05,556-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [READ]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@737d3726]
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [UPGRADE]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56c2f401]
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,557-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [UPGRADE_NOWAIT]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5526998a]
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [UPGRADE_SKIPLOCKED]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36175c3f]
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,558-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [FORCE]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@733931cf]
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [PESSIMISTIC_READ]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for read only with rs
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@615316b]
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [PESSIMISTIC_WRITE]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@87d1156]
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,559-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [PESSIMISTIC_FORCE_INCREMENT]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=? for update with rs
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@564798d2]
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [OPTIMISTIC]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@359fd93]
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : key
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkDetail
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : linkInfo
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : summary
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.Project)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.Project, querySpaceUid=<gen:0>, path=com.nicklaus.bean.Project)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.Project)
+          - SQL table alias mapping - project0_
+          - alias suffix - 0_
+          - suffixed key columns - {p_id1_0_0_}
+
+2020-07-11 09:47:05,560-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.Project [OPTIMISTIC_FORCE_INCREMENT]: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.nicklaus.bean.Project: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.nicklaus.bean.Project: select project0_.p_id as p_id1_0_0_, project0_.p_description as p_descri2_0_0_, project0_.p_key as p_key3_0_0_, project0_.p_linkdetail as p_linkde4_0_0_, project0_.p_linkinfo as p_linkin5_0_0_, project0_.p_name as p_name6_0_0_, project0_.p_summary as p_summar7_0_0_, project0_.u_id as u_id8_0_0_ from project_table project0_ where project0_.p_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.nicklaus.bean.StyleBean
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select s_id from style_table where s_id =?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select stylebean_.s_id, stylebean_.s_bgColorRGB as s_bgColo2_1_, stylebean_.u_id as u_id3_1_ from style_table stylebean_ where stylebean_.s_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into style_table (s_bgColorRGB, u_id, s_id) values (?, ?, ?)
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update style_table set s_bgColorRGB=?, u_id=? where s_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from style_table where s_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into style_table (s_id, s_bgColorRGB, u_id) values (default, ?, ?)
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23090ce0]
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [NONE]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@79906718]
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [READ]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,561-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4fcab065]
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [UPGRADE]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d03fa23]
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [UPGRADE_NOWAIT]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@df589cc]
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [UPGRADE_SKIPLOCKED]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6707a726]
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,562-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [FORCE]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63c8738e]
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [PESSIMISTIC_READ]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for read only with rs
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30a8ff61]
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [PESSIMISTIC_WRITE]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43920ec5]
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,563-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [PESSIMISTIC_FORCE_INCREMENT]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=? for update with rs
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3caea8ca]
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [OPTIMISTIC]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e87dacb]
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : bgColor
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : uid
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.nicklaus.bean.StyleBean)
+    - Returns
+       - EntityReturnImpl(entity=com.nicklaus.bean.StyleBean, querySpaceUid=<gen:0>, path=com.nicklaus.bean.StyleBean)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.nicklaus.bean.StyleBean)
+          - SQL table alias mapping - stylebean0_
+          - alias suffix - 0_
+          - suffixed key columns - {s_id1_1_0_}
+
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.nicklaus.bean.StyleBean [OPTIMISTIC_FORCE_INCREMENT]: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.nicklaus.bean.StyleBean: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.nicklaus.bean.StyleBean: select stylebean0_.s_id as s_id1_1_0_, stylebean0_.s_bgColorRGB as s_bgColo2_1_0_, stylebean0_.u_id as u_id3_1_0_ from style_table stylebean0_ where stylebean0_.s_id=?
+2020-07-11 09:47:05,564-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+2020-07-11 09:47:05,566-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2020-07-11 09:47:05,566-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2020-07-11 09:47:05,568-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-11 09:47:05,568-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.NamedQueryRepository - Checking 0 named HQL queries
+2020-07-11 09:47:05,568-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.NamedQueryRepository - Checking 0 named SQL queries
+2020-07-11 09:47:05,571-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7623b0de
+2020-07-11 09:47:05,572-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 27a59d32-2f73-4dd7-980c-0b4fe858f1bb (<unnamed>)
+2020-07-11 09:47:05,572-[TS] DEBUG http-bio-80-exec-1 org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2020-07-11 09:47:05,574-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator - No actions specified; doing nothing
+2020-07-11 09:47:05,599-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.internal.EntityManagerFactoryRegistry - Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@cbfa15e
+2020-07-11 09:47:05,599-[TS] DEBUG http-bio-80-exec-1 org.hibernate.jpa.internal.EntityManagerFactoryRegistry - Registering EntityManagerFactory: project 
+2020-07-11 09:47:05,644-[TS] DEBUG http-bio-80-exec-1 org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2020-07-11 09:47:05,646-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.transaction.internal.TransactionImpl - begin
+2020-07-11 09:47:05,662-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5de53ed0
+2020-07-11 09:47:05,662-[TS] INFO http-bio-80-exec-1 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-07-11 09:47:05,692-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: from com.nicklaus.bean.UserBean where username = ? and password = ?
+2020-07-11 09:47:05,698-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[IDENT] Node: 'com'
+    |           |  |  \-[IDENT] Node: 'nicklaus'
+    |           |  \-[IDENT] Node: 'bean'
+    |           \-[IDENT] Node: 'UserBean'
+    \-[WHERE] Node: 'where'
+       \-[AND] Node: 'and'
+          +-[EQ] Node: '='
+          |  +-[IDENT] Node: 'username'
+          |  \-[PARAM] Node: '?'
+          \-[EQ] Node: '='
+             +-[IDENT] Node: 'password'
+             \-[PARAM] Node: '?'
+
+2020-07-11 09:47:05,698-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2020-07-11 09:47:05,718-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-07-11 09:47:05,735-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : com.nicklaus.bean.UserBean (<no alias>) -> userbean0_
+2020-07-11 09:47:05,737-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+2020-07-11 09:47:05,737-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : username -> org.hibernate.type.StringType@23171fe7
+2020-07-11 09:47:05,738-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.username -> userbean0_.u_username
+2020-07-11 09:47:05,738-[TS] WARN http-bio-80-exec-1 org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 50 in HQL: [from com.nicklaus.bean.UserBean where username = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2020-07-11 09:47:05,739-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias} -> {synthetic-alias}
+2020-07-11 09:47:05,739-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : password -> org.hibernate.type.StringType@23171fe7
+2020-07-11 09:47:05,739-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : {synthetic-alias}.password -> userbean0_.u_password
+2020-07-11 09:47:05,739-[TS] WARN http-bio-80-exec-1 org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 67 in HQL: [from com.nicklaus.bean.UserBean where username = ? and password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2020-07-11 09:47:05,739-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-07-11 09:47:05,739-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} user_table userbean0_ ) ( where ( and ( = ( userbean0_.u_username {synthetic-alias} username ) ? ) ( = ( userbean0_.u_password {synthetic-alias} password ) ? ) ) ) )
+2020-07-11 09:47:05,744-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+2020-07-11 09:47:05,747-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [user_table userbean0_]
+2020-07-11 09:47:05,747-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-07-11 09:47:05,747-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user_table)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'userbean0_.u_id as u_id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=user_table,tableAlias=userbean0_,origin=null,columns={,className=com.nicklaus.bean.UserBean}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'userbean0_.u_address as u_addres2_2_, userbean0_.u_email as u_email3_2_, userbean0_.u_experience as u_experi4_2_, userbean0_.u_goal as u_goal5_2_, userbean0_.u_interest as u_intere6_2_, userbean0_.u_introduction as u_introd7_2_, userbean0_.u_name as u_name8_2_, userbean0_.u_password as u_passwo9_2_, userbean0_.u_skill as u_skill10_2_, userbean0_.u_username as u_usern11_2_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[userbean0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user_table userbean0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=user_table,tableAlias=userbean0_,origin=null,columns={,className=com.nicklaus.bean.UserBean}}
+    \-[WHERE] SqlNode: 'where'
+       \-[AND] SqlNode: 'and'
+          +-[EQ] BinaryLogicOperatorNode: '='
+          |  +-[DOT] DotNode: 'userbean0_.u_username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path={synthetic-alias}.username,tableAlias=userbean0_,className=com.nicklaus.bean.UserBean,classAlias=null}
+          |  |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          |  \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.StringType@23171fe7}
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[DOT] DotNode: 'userbean0_.u_password' {propertyName=password,dereferenceType=PRIMITIVE,getPropertyPath=password,path={synthetic-alias}.password,tableAlias=userbean0_,className=com.nicklaus.bean.UserBean,classAlias=null}
+             |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+             |  \-[IDENT] IdentNode: 'password' {originalText=password}
+             \-[PARAM] ParameterNode: '?' {ordinal=1, expectedType=org.hibernate.type.StringType@23171fe7}
+
+2020-07-11 09:47:05,747-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2020-07-11 09:47:05,751-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: from com.nicklaus.bean.UserBean where username = ? and password = ?
+2020-07-11 09:47:05,751-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select userbean0_.u_id as u_id1_2_, userbean0_.u_address as u_addres2_2_, userbean0_.u_email as u_email3_2_, userbean0_.u_experience as u_experi4_2_, userbean0_.u_goal as u_goal5_2_, userbean0_.u_interest as u_intere6_2_, userbean0_.u_introduction as u_introd7_2_, userbean0_.u_name as u_name8_2_, userbean0_.u_password as u_passwo9_2_, userbean0_.u_skill as u_skill10_2_, userbean0_.u_username as u_usern11_2_ from user_table userbean0_ where userbean0_.u_username=? and userbean0_.u_password=?
+2020-07-11 09:47:05,751-[TS] DEBUG http-bio-80-exec-1 org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2020-07-11 09:47:05,782-[TS] DEBUG http-bio-80-exec-1 org.hibernate.SQL - select userbean0_.u_id as u_id1_2_, userbean0_.u_address as u_addres2_2_, userbean0_.u_email as u_email3_2_, userbean0_.u_experience as u_experi4_2_, userbean0_.u_goal as u_goal5_2_, userbean0_.u_interest as u_intere6_2_, userbean0_.u_introduction as u_introd7_2_, userbean0_.u_name as u_name8_2_, userbean0_.u_password as u_passwo9_2_, userbean0_.u_skill as u_skill10_2_, userbean0_.u_username as u_usern11_2_ from user_table userbean0_ where userbean0_.u_username=? and userbean0_.u_password=?
+2020-07-11 09:47:05,847-[TS] DEBUG http-bio-80-exec-1 org.hibernate.engine.transaction.internal.TransactionImpl - rolling back
+2020-07-11 09:47:34,686-[TS] DEBUG pool-1-thread-1 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Connection pool now considered primed; min-size will be maintained

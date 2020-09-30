@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Retrospect
+  Date: 2020/6/21
+  Time: 8:50
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Join HI BLOG!</title>
+
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+
+    <h:outputStylesheet name="css/register.css"/>
+</h:head>
+
+<h:body styleClass="myBody">
+    <div class="registerNav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid myNavbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <h:link outcome="index">
+                        <h:graphicImage styleClass="navbar-brand" url="resources/images/logo.png"/>
+                    </h:link>
+                </div>
+
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="myNav">
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <h:link value="Login" outcome="login" styleClass="text-info"/>
+                            </button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="outerForm">
+            <div class="row formHeader">
+                <h1>Create your account</h1>
+            </div>
+
+            <div class="innerForm">
+                <h:form id="register">
+                    <div class="form-group">
+                        <p class="text-info">
+                            <h:outputText id="availableUsername" value="#{user.available}"/>
+                        </p>
+                        <label for="register:username">Username<span class="text-danger">*</span></label>
+                        <h:inputText id="username" styleClass="form-control"
+                                     p:placeholder="Please enter your username"
+                                     value="#{user.username}"
+                                     required="true"
+                                     requiredMessage="#{errorMsg.emptyUserUsername}"
+                                     validatorMessage="#{errorMsg.invalidUserUsername}">
+                            <f:validateLength minimum="#{errorMsg.userUsernameMinLength}"
+                                              maximum="#{errorMsg.userUsernameMaxLength}"/>
+                            <f:ajax render="availableUsername usernameMsg" event="blur" execute="username" listener="#{user.isAvailable()}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="username" id="usernameMsg"/></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register:password">Password<span class="text-danger">*</span></label>
+                        <h:inputText id="password" styleClass="form-control"
+                                     p:placeholder="Please enter your password"
+                                     value="#{user.password}"
+                                     required="true"
+                                     requiredMessage="#{errorMsg.emptyUserPassword}"
+                                     validatorMessage="#{errorMsg.invalidUserPassword}">
+                            <f:validateLength minimum="#{errorMsg.userPasswordMinLength}"
+                                              maximum="#{errorMsg.userPasswordMaxLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="password"/></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register:name">Real name<span class="text-danger">*</span></label>
+                        <h:inputText id="name" styleClass="form-control"
+                                     p:placeholder="Please enter your real name"
+                                     value="#{user.name}"
+                                     required="true"
+                                     requiredMessage="#{errorMsg.emptyUserName}"
+                                     validatorMessage="#{errorMsg.invalidUserName}">
+                            <f:validateLength minimum="#{errorMsg.userNameMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="name"/></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register:address">Address<span class="text-danger">*</span></label>
+                        <h:inputText id="address" styleClass="form-control"
+                                     p:placeholder="Please enter your address"
+                                     value="#{user.address}"
+                                     required="true"
+                                     requiredMessage="#{errorMsg.emptyUserAddress}"
+                                     validatorMessage="#{errorMsg.invalidUserAddress}">
+                            <f:validateLength minimum="#{errorMsg.userAddressMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="address"/></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="register:email">Email<span class="text-danger">*</span></label>
+                        <h:inputText id="email" styleClass="form-control"
+                                     p:placeholder="Please enter your email"
+                                     value="#{user.email}"
+                                     required="true"
+                                     requiredMessage="#{errorMsg.emptyUserEmail}"
+                                     validatorMessage="#{errorMsg.invalidUserEmail}">
+                            <f:validateRegex pattern="#{errorMsg.userEmailRegex}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="email"/></span>
+                    </div>
+                    <div class="form-group registerBtn">
+                        <h:commandButton value="Create account" styleClass="btn btn-primary form-control"
+                                         action="#{user.createAccount}"/>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer row">
+        <!--footer-->
+        <ui:insert>
+            <ui:include src="footer.xhtml"/>
+        </ui:insert>
+    </div>
+
+</h:body>
+
+</html>

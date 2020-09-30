@@ -1,0 +1,35 @@
+#page-content,#editProject{
+    width: 1000px;
+    margin-left: 45px;
+}
+
+.text-content{
+    font-size: 20px;
+}
+
+.edit{
+    float: right;
+}
+
+.pKey{
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.key{
+    margin-top: 5px;
+}
+
+#projectForm {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.form-btn{
+    float: right;
+}
+
+.mybtn{
+    margin-right: 10px;
+}

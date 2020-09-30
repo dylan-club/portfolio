@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Edit Project</title>
+    <meta  name="viewport" content="width=device-width,initial-scale=1"/>
+
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+    <!--custom style sheets-->
+    <h:outputStylesheet name="css/page.css"/>
+
+    <script type="text/javascript">
+        //add expanding list of keywords
+        function addKey() {
+            var input = '&lt;input type="text" class="form-control key"/>';
+            $("#keys").append(input);
+        }
+
+        //merge all keywords
+        function mergeKeys(){
+            var keys = $("#editPro\\:key").val();
+
+            var inputs = $(".key");
+
+            for (var i = 0; i &lt; inputs.length; i++) {
+                var key = $(inputs[i]).val();
+                //if user's input is empty
+                if ($.trim(key) == ""){
+                    continue;
+                }
+                keys += ",";
+                keys += key;
+            }
+
+            $("#editPro\\:key").val(keys);
+
+            $(".key").remove();
+        }
+
+        window.onload = function () {
+
+            //split keywords into expending list
+            var keywords = $("#editPro\\:key").val().split(",");
+            $("#editPro\\:key").val(keywords[0]);
+
+            for (var i = 1; i &lt; keywords.length; i++) {
+                var input = '&lt;input type="text" class="form-control key" value="'+keywords[i]+'"/>';
+                $("#keys").append(input);
+            }
+        }
+    </script>
+
+</h:head>
+
+<h:body style="background-color: #{(styleManager.userStyle.bgColor == null) ? 'white' : styleManager.userStyle.bgColor}">
+    <!--header-->
+    <ui:insert>
+        <ui:include src="header.xhtml"/>
+    </ui:insert>
+
+    <div class="container">
+
+        <div class="well well-lg">
+            <h1 class="text-center">Editing Project</h1>
+            <!--JSF Form-->
+            <div id="projectForm">
+                <h:form id="editPro">
+                    <h:inputHidden value="#{projectManager.pageProject.pid}"/>
+                    <!--input for project name-->
+                    <div class="form-group">
+                        <label class="text-info" for="editPro:name">Project Name</label>
+                        <h:inputText styleClass="form-control" value="#{projectManager.pageProject.name}" id="name"
+                            required="true"
+                            requiredMessage="#{errorMsg.emptyProjectName}"
+                            validatorMessage="#{errorMsg.invalidProjectName}">
+                            <f:validateLength minimum="#{errorMsg.projectNameMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="name"/></span>
+                    </div>
+                    <!--input for project keywords-->
+                    <div class="form-group" id="keys">
+                        <label class="text-info" for="editPro:key">Project Key</label>
+                        <button type="button" onclick="addKey()" class="btn btn-success btn-xs">+</button>
+                        <button type="button" onclick="mergeKeys()" class="btn btn-success btn-xs">Confirm</button>
+                        <h:inputText styleClass="form-control" value="#{projectManager.pageProject.key}" id="key"
+                            required="true"
+                            requiredMessage="#{errorMsg.emptyProjectKeys}"
+                            validatorMessage="#{errorMsg.invalidProjectKeys}">
+                            <f:validateLength minimum="#{errorMsg.projectKeysMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="key"/></span>
+                    </div>
+                    <!--input for project description-->
+                    <div class="form-group">
+                        <label class="text-info" for="editPro:description">Project Description</label>
+                        <h:inputText styleClass="form-control" value="#{projectManager.pageProject.description}" id="description"
+                            required="true"
+                            requiredMessage="#{errorMsg.emptyProjectDescription}"
+                            validatorMessage="#{errorMsg.invalidProjectDescription}">
+                            <f:validateLength minimum="#{errorMsg.projectDescriptionMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="description"/></span>
+                    </div>
+                    <!--input for project summary-->
+                    <div class="form-group">
+                        <label class="text-info" for="editPro:summary">Project Summary</label>
+                        <h:inputTextarea style="resize: none;" rows="5" styleClass="form-control" value="#{projectManager.pageProject.summary}" id="summary"
+                            required="true"
+                            requiredMessage="#{errorMsg.emptyProjectSummary}"
+                            validatorMessage="#{errorMsg.invalidProjectSummary}">
+                            <f:validateLength minimum="#{errorMsg.projectSummaryMinLength}"/>
+                        </h:inputTextarea>
+                        <span class="text-danger"><h:message for="summary"/></span>
+                    </div>
+                    <!--input for project link information-->
+                    <div class="form-group">
+                        <label class="text-info" for="editPro:linkInfo">Link Information</label>
+                        <h:inputText styleClass="form-control" value="#{projectManager.pageProject.linkInfo}" id="linkInfo"
+                            required="true"
+                            requiredMessage="#{errorMsg.emptyProjectLinkInfo}"
+                            validatorMessage="#{errorMsg.invalidProjectLinkInfo}">
+                            <f:validateLength minimum="#{errorMsg.projectLinkInfoMinLength}"/>
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="linkInfo"/></span>
+                    </div>
+                    <!--input for project link-->
+                    <div class="form-group">
+                        <label class="text-info" for="editPro:linkDetail">Project Link</label>
+                        <h:inputText styleClass="form-control" value="#{projectManager.pageProject.linkDetail}" id="linkDetail"
+                            required="true"
+                            validatorMessage="#{errorMsg.invalidProjectLink}"
+                            requiredMessage="#{errorMsg.emptyProjectLink}">
+                            <f:validateRegex pattern="#{errorMsg.projectLinkRegex}" />
+                        </h:inputText>
+                        <span class="text-danger"><h:message for="linkDetail"/></span>
+                    </div>
+
+                    <!--Submit form-->
+                    <div class="form-group">
+                        <div class="form-btn">
+                            <h:commandButton styleClass="btn btn-warning mybtn" value="Cancel" action="project"
+                                             actionListener="#{projectManager.findPageProject(projectManager.pageProject.pid)}"/>
+                            <h:commandButton id="submitPro" styleClass="btn btn-primary" value="Save changes" action="#{projectManager.updateProject}"/>
+                        </div>
+                    </div>
+                </h:form>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <ui:insert>
+        <ui:include src="footer.xhtml"/>
+    </ui:insert>
+</h:body>
+</html>

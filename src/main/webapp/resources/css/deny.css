@@ -1,0 +1,13 @@
+.myBody{
+    background-color: #555555;
+}
+
+.myContainer{
+    box-shadow:2px 2px 20px 2px rgba(0,0,0,0.3);
+    background-color: #f8f8f8;
+    opacity: 0.5;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 200px;
+    padding-top: 50px;
+}

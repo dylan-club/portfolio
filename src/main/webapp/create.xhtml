@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Create a new project!</title>
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+
+    <h:outputStylesheet name="css/create.css"/>
+
+    <style type="text/css">
+        .myBody {
+            background-image: url("resources/images/create_background.jpg");
+            height:100%;
+            text-align: center;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $("#project\\:submit").css("borderRadius","20px");
+            $("#project\\:cancel").css("borderRadius","20px");
+        }
+    </script>
+</h:head>
+
+<h:body styleClass="myBody">
+
+    <div class="myOpacity">
+        <!--header-->
+        <ui:insert>
+            <ui:include src="header.xhtml"/>
+        </ui:insert>
+    </div>
+
+    <div class="myContainer">
+
+        <div class="row">
+            <h1>Create a new project</h1>
+        </div>
+
+        <div id="projectForm" class="row">
+            <h:form id="project">
+                <div class="form-group">
+                    <label for="project:name">Project name</label>
+                    <h:inputText id="name"
+                                 value="#{project.name}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectName}"
+                                 validatorMessage="#{errorMsg.invalidProjectName}">
+                        <f:validateLength minimum="#{errorMsg.projectNameMinLength}"/>
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="name"/></span>
+                </div>
+                <div class="form-group">
+                    <label for="project:key">Project key</label>
+                    <h:inputText id="key"
+                                 value="#{project.key}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectKeys}"
+                                 validatorMessage="#{errorMsg.invalidProjectKeys}">
+                        <f:validateLength minimum="#{errorMsg.projectKeysMinLength}"/>
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="key"/></span>
+                </div>
+                <div class="form-group">
+                    <label for="project:description">Project description</label>
+                    <h:inputText id="description"
+                                 value="#{project.description}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectDescription}"
+                                 validatorMessage="#{errorMsg.invalidProjectDescription}">
+                        <f:validateLength minimum="#{errorMsg.projectDescriptionMinLength}"/>
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="description"/></span>
+                </div>
+                <div class="form-group">
+                    <label for="project:summary">Project summary</label>
+                    <h:inputText id="summary"
+                                 value="#{project.summary}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectSummary}"
+                                 validatorMessage="#{errorMsg.invalidProjectSummary}">
+                        <f:validateLength minimum="#{errorMsg.projectSummaryMinLength}"/>
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="summary"/></span>
+                </div>
+                <div class="form-group">
+                    <label for="project:linkInfo">Project link information</label>
+                    <h:inputText id="linkInfo"
+                                 value="#{project.linkInfo}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectLinkInfo}"
+                                 validatorMessage="#{errorMsg.invalidProjectLinkInfo}">
+                        <f:validateLength minimum="#{errorMsg.projectLinkInfoMinLength}"/>
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="linkInfo"/></span>
+                </div>
+                <div class="form-group">
+                    <label for="project:link">Project link</label>
+                    <h:inputText id="link"
+                                 value="#{project.linkDetail}"
+                                 styleClass="form-control"
+                                 required="true"
+                                 requiredMessage="#{errorMsg.emptyProjectLink}"
+                                 validatorMessage="#{errorMsg.invalidProjectLink}">
+                        <f:validateRegex pattern="#{errorMsg.projectLinkRegex}" />
+                    </h:inputText>
+                    <span class="text-danger"><h:message for="link"/></span>
+                </div>
+                <div class="form-group">
+                    <h:commandButton id="submit" value="Create" action="#{project.create}" style="margin-bottom: 10px" styleClass="form-control btn btn-success"/>
+                    <h:link id="cancel" value="Cancel" styleClass="form-control btn btn-warning" outcome="home"/>
+                </div>
+            </h:form>
+        </div>
+    </div>
+
+    <div class="myOpacity">
+        <ui:insert>
+            <ui:include src="footer.xhtml"/>
+        </ui:insert>
+    </div>
+
+</h:body>
+
+</html>

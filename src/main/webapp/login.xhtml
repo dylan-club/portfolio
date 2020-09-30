@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+    <title>Login to Hi BLOG!</title>
+
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+
+    <h:outputStylesheet name="css/login.css"/>
+
+</h:head>
+
+<h:body styleClass="myLogin">
+
+    <div class="loginForm">
+        <div class="row" style="padding-top: 20px">
+            <h:link outcome="index">
+                <h:graphicImage url="resources/images/logo.png"/>
+            </h:link>
+        </div>
+
+        <div class="row">
+            <h1>Login to HI BLOG!</h1>
+        </div>
+
+        <div class="row">
+            <p><h:outputText style="color: red" value="#{userManager.loginError}"/></p>
+        </div>
+
+        <div class="row">
+            <div class="innerForm">
+                <div class="login">
+                    <h:form id="login">
+                        <div class="form-group">
+                            <label for="login:username">Username</label>
+                            <h:inputText id="username" styleClass="form-control" p:placeholder="username"
+                                         value="#{userManager.username}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="login:password">Password</label>
+                            <h:inputSecret id="password" styleClass="form-control" p:placeholder="password"
+                                           value="#{userManager.password}"/>
+                        </div>
+                        <div class="form-group loginBtn">
+                            <h:commandButton value="Login" styleClass="btn btn-success form-control"
+                                             action="#{userManager.login}"/>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="registerDiv">
+                <p>
+                    New to HI BLOG!?<h:link value="Create a new account." outcome="register"/>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    
+</h:body>
+
+</html>

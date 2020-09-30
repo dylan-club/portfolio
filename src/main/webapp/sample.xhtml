@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Sample profolio</title>
+
+    <!--import bootstrap files to decorate HTML page-->
+    <h:outputStylesheet name="css/bootstrap.min.css"/>
+    <h:outputScript library="js" name="jquery-3.2.1.min.js"/>
+    <h:outputScript library="js" name="bootstrap.min.js"/>
+
+    <h:outputStylesheet name="css/sample.css"/>
+
+    <style type="text/css">
+
+    </style>
+</h:head>
+
+<h:body styleClass="myBody">
+    <div class="myContainer">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid myNavbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <h:link outcome="index">
+                        <h:graphicImage styleClass="navbar-brand" url="resources/images/logo.png"/>
+                    </h:link>
+                </div>
+
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="myNav">
+                            <button type="button" class="btn btn-default navbar-btn">
+                                <h:link value="Login" outcome="login" styleClass="text-info"/>
+                            </button>
+                        </li>
+                        <li class="myNav">
+                            <button type="button" class="btn btn-primary navbar-btn">
+                                <h:link value="Sign up" outcome="register" styleClass="myText"/>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="row" id="sample">
+            <h1 class="text-center text-info">Sample portfolio</h1>
+            <h3 class="text-info">Home page</h3>
+            <img src="resources/images/sample_1.PNG" alt="sample-1" class="img-thumbnail"/>
+            <h3 class="text-info">Project page</h3>
+            <img src="resources/images/sample-2.PNG" alt="sample-2" class="img-thumbnail"/>
+            <h:link id="loginBtn" styleClass="btn btn-warning btn-lg" value="Join us!" outcome="login"/>
+        </div>
+
+        <!--footer-->
+        <ui:insert>
+            <ui:include src="footer.xhtml"/>
+        </ui:insert>
+    </div>
+
+    
+</h:body>
+
+</html>

@@ -1,0 +1,17 @@
+.myBody{
+    background-color: #5CB85C;
+    text-align: center;
+}
+
+.ok{
+    font-size: 50px;
+    color: white;
+}
+
+.login{
+    font-size: 20px;
+}
+
+.myDiv{
+    margin-top: 300px;
+}
